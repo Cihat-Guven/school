@@ -20,6 +20,9 @@ public class Student {
 
     int presentDayNumber;
 
+    int hoursSpentInSchool;
+    double timeToGetOutOfSchool;
+
 
     public List<String> study(String lesson){
         learnedLessons.add(lesson);
@@ -31,4 +34,12 @@ public class Student {
         return presentDayNumber;
     }
 
+    public static void main(String[] args) {
+        for (int hoursSpentInSchool = 0; hoursSpentInSchool < 2; hoursSpentInSchool++) {
+            System.out.println(hoursSpentInSchool + " hour");
+        }
+        for (int hoursSpentInSchool = 2 , timeToGetOutOfSchool = 9; hoursSpentInSchool < timeToGetOutOfSchool; hoursSpentInSchool++) {
+            System.out.println(hoursSpentInSchool + " hours");
+        }
+    }
 }
